@@ -15,7 +15,12 @@
 		"test:coverage": "jest --coverage",
 		"sversion": "yarn standard-version"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@sapphire/framework": "sapphire-project/framework#build",
+		"@sapphire/pieces": "sapphire-project/pieces#build",
+		"@scp/in17n": "^1.0.1",
+		"discord.js": "^12.3.1"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^9.1.1",
 		"@commitlint/config-conventional": "^9.1.1",
