@@ -20,7 +20,8 @@
 		"@sapphire/pieces": "sapphire-project/pieces#build",
 		"@sapphire/utilities": "^1.0.1",
 		"@scp/in17n": "^1.0.1",
-		"discord.js": "^12.3.1"
+		"discord.js": "^12.3.1",
+		"module-alias": "^2.2.2"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^11.0.0",
@@ -65,5 +66,10 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
+	},
+	"_moduleAliases": {
+		"@utils": "dist/lib/utils",
+		"@lib": "dist/lib",
+		"@root": "dist"
 	}
 }

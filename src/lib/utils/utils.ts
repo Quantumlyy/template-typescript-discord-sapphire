@@ -1,6 +1,6 @@
+import { BotClient } from '@lib/BotClient';
 import { Events } from '@sapphire/framework';
 import { isThenable } from '@sapphire/utilities';
-import { BotClient } from '../BotClient';
 
 /**
  * @copyright 2019-2020 Antonio Román
