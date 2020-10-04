@@ -3,7 +3,11 @@
 	"description": "--description--",
 	"version": "1.0.0",
 	"main": "dist/index.js",
-	"author": "QuantumlyTangled <yo@quantumlytangled.com> (https://quantumlytangled.com)",
+	"author": {
+		"name": "QuantumlyTangled",
+		"email": "yo@quantumlytangled.com",
+		"url": "https://quantumlytangled.com"
+	},
 	"license": "MIT",
 	"scripts": {
 		"lint": "eslint src --ext ts --fix",
