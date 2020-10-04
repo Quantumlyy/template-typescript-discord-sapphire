@@ -7,7 +7,7 @@
 		"incremental": false,
 		"baseUrl": ".",
 		"paths": {
-			"@utils/*": ["../src/lib/util/*"],
+			"@utils/*": ["../src/lib/utils/*"],
 			"@lib/*": ["../src/lib/*"],
 			"@root/*": ["../src/*"]
 		}
