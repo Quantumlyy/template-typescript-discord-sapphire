@@ -67,6 +67,8 @@ jobs:
       - name: Install Dependencies
         run: |
           yarn --ignore-scripts --frozen-lockfile
+      - name: Copy Config
+        run: cp src/config.example.ts src/config.ts
       - name: Build Project
         uses: icrawl/action-tsc@v1
         with:
