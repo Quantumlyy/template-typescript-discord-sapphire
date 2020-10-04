@@ -3,7 +3,11 @@
 	"description": "--description--",
 	"version": "1.0.0",
 	"main": "dist/index.js",
-	"author": "QuantumlyTangled <yo@quantumlytangled.com> (https://quantumlytangled.com)",
+	"author": {
+		"name": "QuantumlyTangled",
+		"email": "yo@quantumlytangled.com",
+		"url": "https://quantumlytangled.com"
+	},
 	"license": "MIT",
 	"scripts": {
 		"lint": "eslint src --ext ts --fix",
@@ -18,8 +22,11 @@
 	"dependencies": {
 		"@sapphire/framework": "sapphire-project/framework#build",
 		"@sapphire/pieces": "sapphire-project/pieces#build",
+		"@sapphire/utilities": "^1.0.1",
 		"@scp/in17n": "^1.0.1",
-		"discord.js": "^12.3.1"
+		"discord.js": "^12.3.1",
+		"i18next": "^19.8.1",
+		"module-alias": "^2.2.2"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^11.0.0",
@@ -28,16 +35,17 @@
 		"@types/jest": "^26.0.14",
 		"@types/module-alias": "^2.0.0",
 		"@types/node": "^14.11.2",
-		"@typescript-eslint/eslint-plugin": "^4.2.0",
-		"@typescript-eslint/parser": "^4.2.0",
+		"@types/ws": "^7.2.7",
+		"@typescript-eslint/eslint-plugin": "^4.3.0",
+		"@typescript-eslint/parser": "^4.3.0",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^7.9.0",
+		"eslint": "^7.10.0",
 		"husky": "^4.3.0",
 		"jest": "^26.4.2",
 		"jest-circus": "^26.4.2",
 		"lint-staged": "^10.4.0",
 		"standard-version": "^9.0.0",
-		"ts-jest": "^26.4.0",
+		"ts-jest": "^26.4.1",
 		"typescript": "^4.0.3"
 	},
 	"engines": {
@@ -64,5 +72,10 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
+	},
+	"_moduleAliases": {
+		"@utils": "dist/lib/utils",
+		"@lib": "dist/lib",
+		"@root": "dist"
 	}
 }
