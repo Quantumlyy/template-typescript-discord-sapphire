@@ -9,3 +9,5 @@ import { isThenable } from '@sapphire/utilities';
 export function floatPromise(ctx: { client: BotClient }, promise: Promise<unknown>) {
 	if (isThenable(promise)) promise.catch(error => ctx.client.emit(Events.Error, error));
 }
+
+export const mainTest = () => 'this builds and pushes';
