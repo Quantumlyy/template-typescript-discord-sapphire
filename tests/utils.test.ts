@@ -1,4 +1,4 @@
-import { mainTest } from '../src';
+import { mainTest } from '../src/lib/utils';
 
 describe('Tests', () => {
 	test('should pass', () => {
