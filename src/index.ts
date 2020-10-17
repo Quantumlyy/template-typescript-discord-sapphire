@@ -10,5 +10,3 @@ async function main() {
 }
 
 floatPromise({ client }, main());
-
-export const mainTest = () => 'this builds and pushes';
