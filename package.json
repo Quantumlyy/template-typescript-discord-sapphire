@@ -3,6 +3,11 @@
 	"description": "--description--",
 	"version": "1.0.0",
 	"main": "dist/index.js",
+	"imports": {
+		"#lib/*": "./dist/lib/*.js",
+		"#root/*": "./dist/*.js",
+		"#utils/*": "./dist/lib/utils/*.js"
+	},
 	"author": {
 		"name": "QuantumlyTangled",
 		"email": "yo@quantumlytangled.com",
@@ -31,6 +36,7 @@
 		"@commitlint/cli": "^11.0.0",
 		"@commitlint/config-conventional": "^11.0.0",
 		"@quantumly/eslint-config": "^1.1.0",
+		"@types/i18next-fs-backend": "^1.0.0",
 		"@types/jest": "^26.0.20",
 		"@types/node": "^14.14.22",
 		"@types/ws": "^7.4.0",
@@ -70,10 +76,5 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
-	},
-	"_moduleAliases": {
-		"@utils": "dist/lib/utils",
-		"@lib": "dist/lib",
-		"@root": "dist"
 	}
 }

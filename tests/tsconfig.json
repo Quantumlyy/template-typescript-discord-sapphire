@@ -7,9 +7,9 @@
 		"incremental": false,
 		"baseUrl": ".",
 		"paths": {
-			"@utils/*": ["../src/lib/utils/*"],
-			"@lib/*": ["../src/lib/*"],
-			"@root/*": ["../src/*"]
+			"#utils/*": ["../src/lib/utils/*"],
+			"#lib/*": ["../src/lib/*"],
+			"#root/*": ["../src/*"]
 		}
 	},
 	"include": [".", "../src/**/*"],

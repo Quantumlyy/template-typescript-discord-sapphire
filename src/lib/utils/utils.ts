@@ -1,4 +1,4 @@
-import { BotClient } from '@lib/BotClient';
+import { BotClient } from '#lib/BotClient';
 import { Events } from '@sapphire/framework';
 import { isThenable } from '@sapphire/utilities';
 

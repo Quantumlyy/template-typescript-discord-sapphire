@@ -1,6 +1,6 @@
+import { CLIENT_OPTIONS as CLIENT_OPTIONS_BASE } from '#utils/constants';
 import { SapphireClient } from '@sapphire/framework';
 import { mergeDefault } from '@sapphire/utilities';
-import { CLIENT_OPTIONS as CLIENT_OPTIONS_BASE } from '@utils/constants';
 import type { ClientOptions } from 'discord.js';
 
 import '@sapphire/plugin-i18next/register-discordjs';
