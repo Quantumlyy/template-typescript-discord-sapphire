@@ -3,10 +3,15 @@
 	"description": "--description--",
 	"version": "1.0.0",
 	"main": "dist/index.js",
+	"imports": {
+		"#lib/*": "./dist/lib/*.js",
+		"#root/*": "./dist/*.js",
+		"#utils/*": "./dist/lib/utils/*.js"
+	},
 	"author": {
-		"name": "QuantumlyTangled",
-		"email": "yo@quantumlytangled.com",
-		"url": "https://quantumlytangled.com"
+		"name": "Quantumlyy",
+		"email": "yo@quantumly.dev",
+		"url": "https://quantumly.dev"
 	},
 	"license": "MIT",
 	"scripts": {
@@ -20,36 +25,32 @@
 		"sversion": "yarn standard-version"
 	},
 	"dependencies": {
-		"@sapphire/framework": "sapphire-project/framework#build",
-		"@sapphire/pieces": "sapphire-project/pieces#build",
-		"@sapphire/utilities": "^1.0.1",
-		"@scp/in17n": "^1.0.1",
-		"discord.js": "^12.3.1",
-		"i18next": "^19.8.1",
-		"module-alias": "^2.2.2"
+		"@sapphire/framework": "^1.0.0-alpha.4",
+		"@sapphire/pieces": "^1.2.0",
+		"@sapphire/utilities": "^1.4.4",
+		"discord.js": "^12.5.1"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^11.0.0",
-		"@commitlint/config-conventional": "^11.0.0",
+		"@commitlint/cli": "^13.2.1",
+		"@commitlint/config-conventional": "^13.2.0",
 		"@quantumly/eslint-config": "^1.1.0",
-		"@types/jest": "^26.0.14",
-		"@types/module-alias": "^2.0.0",
-		"@types/node": "^14.11.2",
-		"@types/ws": "^7.2.7",
-		"@typescript-eslint/eslint-plugin": "^4.3.0",
-		"@typescript-eslint/parser": "^4.3.0",
+		"@types/jest": "^27.0.2",
+		"@types/node": "^16.11.4",
+		"@types/ws": "^8.2.0",
+		"@typescript-eslint/eslint-plugin": "^5.1.0",
+		"@typescript-eslint/parser": "^5.1.0",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^7.10.0",
-		"husky": "^4.3.0",
-		"jest": "^26.4.2",
-		"jest-circus": "^26.4.2",
-		"lint-staged": "^10.4.0",
-		"standard-version": "^9.0.0",
-		"ts-jest": "^26.4.1",
-		"typescript": "^4.0.3"
+		"eslint": "^8.1.0",
+		"husky": "^4.3.8",
+		"jest": "^27.3.1",
+		"jest-circus": "^27.3.1",
+		"lint-staged": "^11.2.4",
+		"standard-version": "^9.1.0",
+		"ts-jest": "^27.0.7",
+		"typescript": "^4.1.3"
 	},
 	"engines": {
-		"node": ">=14",
+		"node": ">=15",
 		"npm": ">=6"
 	},
 	"husky": {
@@ -72,10 +73,5 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
-	},
-	"_moduleAliases": {
-		"@utils": "dist/lib/utils",
-		"@lib": "dist/lib",
-		"@root": "dist"
 	}
 }
