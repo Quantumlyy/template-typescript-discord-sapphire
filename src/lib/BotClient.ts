@@ -3,8 +3,6 @@ import { SapphireClient } from '@sapphire/framework';
 import { mergeDefault } from '@sapphire/utilities';
 import type { ClientOptions } from 'discord.js';
 
-import '@sapphire/plugin-i18next/register-discordjs';
-
 export class BotClient extends SapphireClient {
 
 	public constructor(options?: ClientOptions) {
