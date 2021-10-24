@@ -9,9 +9,9 @@
 		"#utils/*": "./dist/lib/utils/*.js"
 	},
 	"author": {
-		"name": "QuantumlyTangled",
-		"email": "yo@quantumlytangled.com",
-		"url": "https://quantumlytangled.com"
+		"name": "Quantumlyy",
+		"email": "yo@quantumly.dev",
+		"url": "https://quantumly.dev"
 	},
 	"license": "MIT",
 	"scripts": {
